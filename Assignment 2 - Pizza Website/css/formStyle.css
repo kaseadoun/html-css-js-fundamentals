@@ -1,0 +1,81 @@
+/* -------- Form Styling -------- */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #33668880;
+    width: 700px;
+    height: 1100px;
+    border-radius: 10px;
+}
+
+/* Styling of text and selection boxes */
+.inputBox {
+    width: 250px;
+    height: 25px;
+    padding: 0 5px;
+    border-radius: 3px;
+    border: 0;
+}
+
+/* Set font family for these 3 elements */
+input, select, option {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* To ensure text inputs within this <div> go top to bottom */
+#form-contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Fieldset border styling */
+.outside-fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    border-color: white;
+    height: 70%;
+}
+
+/* To create spacing between each section of the form */
+.form-section {
+    margin: 20px 0;
+}
+
+/* Styling of fieldset specifically for the toppings section of the form */
+.topping-fieldset {
+    width: 40%;
+    padding: 10px;
+}
+
+/* Alignment for the sections of the form that has radio selection */
+.radio-alignment{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* Alignment for the sections of the form that has checklist selection */
+.checklist-alignment {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Order button styling */
+#submit-order-button {
+    font-size: 20px;
+    width: 30%;
+    background-color: white;
+    border: #173c55 solid 3px;
+}
+
+/* Order button hover effect */
+#submit-order-button:hover {
+    border-color: #ff8800;
+}

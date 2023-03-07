@@ -1,0 +1,98 @@
+/* -------- Website Font -------- */
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------- Container and Main Content -------- */
+
+/* Container to keep the content within a certain area */
+#container {
+    margin: 0 500px;
+}
+
+/* Keeping each section within the element with the ID of container margin and organization consistent */
+#container > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+/* Pizza Image container for banner image and text*/
+.crop-container {
+    position: relative;
+    overflow: hidden;
+    height: 1080px;
+    width: 1920px;
+}
+
+/* Pizza image size and trim */
+#pizza-background {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    padding-top: -200px;
+}
+
+/* Banner text and colour  */
+h1 {
+    font-size: 200px;
+    color: white;
+}
+
+/* Ensure position of text within the image */
+.text-over-image {
+    position: absolute;
+    bottom: 35%;
+    left: 47%;
+}
+
+/* Button below the banner text */
+#order-now-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+    font-size: 20px;
+    border: solid orange;
+    border-radius: 3px;
+}
+
+/* Hover effects of the button below the banner text */
+#order-now-banner:hover {
+    transition: 0.2s;
+    background-color: #FF9900;
+    height: 70px;
+    width: 110px;
+}
+
+/* Class to align button with H1 */
+.align-with-h1 {
+    margin-left: 10px;
+}
+
+/* Uniform size of all section headers (H2) */
+.section-header {
+    font-size: 50px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    height: 200px;
+    background-color: #FF9900;
+}

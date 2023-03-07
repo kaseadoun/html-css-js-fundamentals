@@ -1,0 +1,67 @@
+/* -------- Navigation Bar Styling -------- */
+/* Header styling */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    color: white;
+    background-color: orange;
+    z-index: 1;
+    border: orange solid;
+}
+
+/* -------- Logo Section -------- */
+/* Logo container */
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Just the logo */
+#nav-logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* "Karsten's Pizzeria" Text */
+#nav-logo-text {
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* -------- Navigation Section -------- */
+/* Navigation Container */
+#navbar {
+    display: flex;
+}
+
+/* Styling of each button in the navigation bar */
+.nav-anchor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+    font-size: 20px;
+    border: solid orange;
+}
+
+
+/* Hover effect of each button in the navigation bar */
+.nav-anchor:hover {
+    background-color: white;
+    border: solid orange;
+    color: orange;
+    transition: 0.2s;
+}
