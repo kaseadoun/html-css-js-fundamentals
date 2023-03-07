@@ -5,8 +5,8 @@ form {
     align-items: center;
     justify-content: center;
     background-color: #33668880;
-    width: 700px;
-    height: 1100px;
+    width: 1300px;
+    height: 700px;
     border-radius: 10px;
 }
 
@@ -25,23 +25,47 @@ input, select, option {
 }
 
 /* To ensure text inputs within this <div> go top to bottom */
-#form-contact-container {
+.form-contact-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+/* Match some label sizes to H3 default */
+.label-match-h3 {
+    font-size: 20px;
+}
+
 /* Fieldset border styling */
 .outside-fieldset {
-    display: flex;
-    flex-direction: column;
+    display: flex;  
     justify-content: space-between;
     align-items: stretch;
     padding: 20px;
-    width: 500px;
+    width: 80%;
     border-radius: 10px;
     border-color: white;
     height: 70%;
+}
+
+/* Split form left and right */
+#form-left, #form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+    padding: 20px;
+}
+#form-left {
+    width: 300px;
+}
+#form-right {
+    width: 600px;
+}
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* To create spacing between each section of the form */
@@ -51,7 +75,7 @@ input, select, option {
 
 /* Styling of fieldset specifically for the toppings section of the form */
 .topping-fieldset {
-    width: 40%;
+    width: 45%;
     padding: 10px;
 }
 
