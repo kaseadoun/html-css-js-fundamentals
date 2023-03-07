@@ -38,7 +38,8 @@
         <!-- Home section -->
         <!-- Home includes the photo banner, the pizzeria's name, and the call-to-action order button -->
         <section class="crop-container" id="home">
-            <img src="./img/pizza-background.jpg" id="pizza-background" alt="Karsten's Pizzeria Banner Photo of Margherita Pizza">
+            <img src="./img/pizza-background.jpg" id="pizza-background"
+                alt="Karsten's Pizzeria Banner Photo of Margherita Pizza">
             <div class="text-over-image">
                 <h1 id="banner-text">KARSTEN'S PIZZERIA</h1>
                 <a class="align-with-h1" id="order-now-banner" href="#order">Order Now</a>
@@ -53,130 +54,136 @@
             </section>
             <!-- Order form section -->
             <section id="order">
-                <form action="" method="post">
+                <form action="somephpform.php" method="post">
                     <h2 class="section-header">CUSTOMIZE YOUR PIZZA</h2>
                     <fieldset class="outside-fieldset">
-                        <!-- Name input and email-->
-                        <div class="form-selection" id="form-contact-container">
-                            <label for="firstName">
-                                <h3>FIRST NAME: </h3>
-                                <input type="text" class="inputBox" id="firstName" name="firstName" placeholder="First Name" required>
-                            </label>
-                            <label for="lastName">
-                                <h3>LAST NAME: </h3>
-                                <input type="text" class="inputBox" id="lastName" name="lastName" placeholder="Last Name" required>
-                            </label>
-                            <label for="email">
-                                <h3>EMAIL: </h3>
-                                <input type="email" class="inputBox" id="email" name="email" placeholder="ex. mail@karstenspizzeria.com" required>
-                            </label>
-                        </div>
+                        <div id="form-left">
+                            <!-- Name input and email-->
+                            <div class="form-selection form-contact-container">
+                                <label for="firstName" class="label-match-h3">FIRST NAME: </label>
+                                <input type="text" class="inputBox" id="firstName" name="firstName"
+                                    placeholder="First Name" required>
+                                <label for="lastName" class="label-match-h3">LAST NAME: </label>
+                                <input type="text" class="inputBox" id="lastName" name="lastName"
+                                    placeholder="Last Name" required>
+                                <label for="email" class="label-match-h3">EMAIL: </label>
+                                <input type="email" class="inputBox" id="email" name="email"
+                                    placeholder="ex. mail@karstenspizzeria.com" required>
+                            </div>
 
-                        <!-- Number of Pizzas Ordered -->
-                        <div class="form-section">
-                            <label for="numberOfPizzas">
-                                <h3>NUMBER OF PIZZAS</h3>
-                                <input type="number" class="inputBox" id="numberOfPizzas" name="numberOfPizzas" min="1" max="10">
-                            </label>
-                        </div>
+                            <!-- Number of Pizzas Ordered -->
+                            <div class="form-section form-contact-container">
+                                <label for="numberOfPizzas" class="label-match-h3">NUMBER OF PIZZAS</label>
+                                <input type="number" class="inputBox" id="numberOfPizzas" name="numberOfPizzas" min="1"
+                                    max="10">
+                            </div>
 
-                        <!-- Pizza Size -->
-                        <div class="form-section">
-                            <label for="pizzaSize">
-                                <h3>PIZZA SIZE</h3>
+                            <!-- Pizza Size -->
+                            <div class="form-section form-contact-container">
+                                <label for="pizzaSize" class="label-match-h3">PIZZA SIZE</label>
                                 <select class="inputBox" id="pizzaSize" name="pizzaSize">
                                     <option value="small">Small - 12"</option>
                                     <option value="medium">Medium - 14"</option>
                                     <option value="large">Large - 16"</option>
                                 </select>
-                            </label>
-                        </div>
-
-                        <!-- Dough -->
-                        <div class="form-section">
-                            <h3>DOUGH</h3>
-                            <div class="radio-alignment">
-                                <div>
-                                    <input type="radio" id="regularDough" name="doughType" value="Regular Dough">
-                                    <label for="regularDough">Regular Dough</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="glutenFreeDough" name="doughType" value="Gluten-Free Dough">
-                                    <label for="glutenFreeDough">Gluten-Free Dough</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="wholeGrainDough" name="doughType" value="Whole Grain Dough">
-                                    <label for="wholeGrainDough">Whole Grain Dough</label>
-                                </div>
                             </div>
                         </div>
 
-                        <!-- Sauces -->
-                        <div class="form-section">
-                            <h3>PIZZA BASE</h3>
-                            <div class="radio-alignment">
-                                <div>
-                                    <input type="radio" id="tomatoSauce" name="sauces" value="Tomato Sauce">
-                                    <label for="tomatoSauce">Tomato Sauce</label>
+                        <div id="form-right">
+                            <!-- Dough -->
+                            <div class="form-section">
+                                <h3>DOUGH</h3>
+                                <div class="radio-alignment">
+                                    <div>
+                                        <input type="radio" id="regularDough" name="doughType" value="Regular Dough">
+                                        <label for="regularDough">Regular Dough</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="glutenFreeDough" name="doughType"
+                                            value="Gluten-Free Dough">
+                                        <label for="glutenFreeDough">Gluten-Free Dough</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="wholeGrainDough" name="doughType"
+                                            value="Whole Grain Dough">
+                                        <label for="wholeGrainDough">Whole Grain Dough</label>
+                                    </div>
                                 </div>
-                                <div>
-                                    <input type="radio" id="creamyPestoSauce" name="sauces" value="Creamy Pesto Sauce">
-                                    <label for="creamyPestoSauce">Creamy Pesto Sauce</label>
+                            </div>
+                            <!-- Sauces -->
+                            <div class="form-section">
+                                <h3>PIZZA BASE</h3>
+                                <div class="radio-alignment">
+                                    <div>
+                                        <input type="radio" id="tomatoSauce" name="sauces" value="Tomato Sauce">
+                                        <label for="tomatoSauce">Tomato Sauce</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="creamyPestoSauce" name="sauces"
+                                            value="Creamy Pesto Sauce">
+                                        <label for="creamyPestoSauce">Creamy Pesto Sauce</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="hotSauce" name="sauces" value="Hot Sauce">
+                                        <label for="hotSauce">Hot Sauce</label>
+                                    </div>
                                 </div>
-                                <div>
-                                    <input type="radio" id="hotSauce" name="sauces" value="Hot Sauce">
-                                    <label for="hotSauce">Hot Sauce</label>
+                            </div>
+
+                            <!-- Toppings -->
+                            <div class="form-section">
+                                <h3>TOPPINGS</h3>
+                                <div class="checklist-alignment">
+                                    <fieldset class="topping-fieldset">
+                                        <legend>Meat</legend>
+                                        <div class="checkboxes">
+                                            <div>
+                                                <input type="checkbox" id="pepperoni" name="pepperoni"
+                                                    value="Pepperoni">
+                                                <label for="pepperoni">Pepperoni</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="bacon" name="bacon" value="Bacon">
+                                                <label for="bacon">Bacon</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="sausage" name="sausage" value="Sausage">
+                                                <label for="sausage">Sausage</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="chicken" name="chicken" value="Chicken">
+                                                <label for="chicken">Chicken</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="topping-fieldset">
+                                        <legend>Vegetables</legend>
+                                        <div class="checkboxes">
+                                            <div>
+                                                <input type="checkbox" id="mushrooms" name="mushrooms"
+                                                    value="Mushrooms">
+                                                <label for="mushrooms">Mushrooms</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="greenPepper" name="greenPepper"
+                                                    value="Green Pepper">
+                                                <label for="greenPepper">Green Peppers</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="onions" name="onions" value="onions">
+                                                <label for="onions">Onions</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="spinach" name="spinach" value="spinach">
+                                                <label for="spinach">Spinach</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Toppings -->
-                        <div class="form-section">
-                            <h3>TOPPINGS</h3>
-                            <div class="checklist-alignment">
-                                <fieldset class="topping-fieldset">
-                                    <legend>Meat</legend>
-                                    <div>
-                                        <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
-                                        <label for="pepperoni">Pepperoni</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="bacon" name="bacon" value="Bacon">
-                                        <label for="bacon">Bacon</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="sausage" name="sausage" value="Sausage">
-                                        <label for="sausage">Sausage</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="chicken" name="chicken" value="Chicken">
-                                        <label for="chicken">Chicken</label>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="topping-fieldset">
-                                    <legend>Vegetables</legend>
-                                    <div>
-                                        <input type="checkbox" id="mushrooms" name="mushrooms" value="Mushrooms">
-                                        <label for="mushrooms">Mushrooms</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="greenPepper" name="greenPepper" value="Green Pepper">
-                                        <label for="greenPepper">Green Peppers</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="onions" name="onions" value="onions">
-                                        <label for="onions">Onions</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="spinach" name="spinach" value="spinach">
-                                        <label for="spinach">Spinach</label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="form-section" id="submit-order-button">ORDER PIZZA</button>
                     </fieldset>
+                    <button type="submit" class="form-section" id="submit-order-button">ORDER PIZZA</button>
                 </form>
             </section>
         </div>
